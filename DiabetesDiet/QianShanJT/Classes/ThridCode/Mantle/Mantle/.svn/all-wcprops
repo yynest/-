@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle
+END
+NSObject+MTLComparisonAdditions.h
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSObject+MTLComparisonAdditions.h
+END
+NSValueTransformer+MTLInversionAdditions.m
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSValueTransformer+MTLInversionAdditions.m
+END
+NSArray+MTLManipulationAdditions.m
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSArray+MTLManipulationAdditions.m
+END
+MTLJSONAdapter.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLJSONAdapter.m
+END
+MTLTransformerErrorHandling.h
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLTransformerErrorHandling.h
+END
+NSObject+MTLComparisonAdditions.m
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSObject+MTLComparisonAdditions.m
+END
+NSValueTransformer+MTLPredefinedTransformerAdditions.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h
+END
+MTLTransformerErrorHandling.m
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLTransformerErrorHandling.m
+END
+NSValueTransformer+MTLPredefinedTransformerAdditions.m
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.m
+END
+MTLReflection.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLReflection.h
+END
+NSDictionary+MTLMappingAdditions.h
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSDictionary+MTLMappingAdditions.h
+END
+MTLValueTransformer.h
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLValueTransformer.h
+END
+MTLReflection.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLReflection.m
+END
+MTLModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLModel.h
+END
+MTLModel+NSCoding.h
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLModel+NSCoding.h
+END
+NSDictionary+MTLJSONKeyPath.h
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSDictionary+MTLJSONKeyPath.h
+END
+NSDictionary+MTLManipulationAdditions.h
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSDictionary+MTLManipulationAdditions.h
+END
+NSDictionary+MTLMappingAdditions.m
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSDictionary+MTLMappingAdditions.m
+END
+Mantle.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/Mantle.h
+END
+MTLValueTransformer.m
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLValueTransformer.m
+END
+MTLModel.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLModel.m
+END
+MTLModel+NSCoding.m
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLModel+NSCoding.m
+END
+NSError+MTLModelException.h
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSError+MTLModelException.h
+END
+NSDictionary+MTLJSONKeyPath.m
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSDictionary+MTLJSONKeyPath.m
+END
+NSDictionary+MTLManipulationAdditions.m
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSDictionary+MTLManipulationAdditions.m
+END
+NSValueTransformer+MTLInversionAdditions.h
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSValueTransformer+MTLInversionAdditions.h
+END
+NSArray+MTLManipulationAdditions.h
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSArray+MTLManipulationAdditions.h
+END
+MTLJSONAdapter.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLJSONAdapter.h
+END
+NSError+MTLModelException.m
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSError+MTLModelException.m
+END

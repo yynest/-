@@ -1,0 +1,27 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 51
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11994/iOS/trunk/QianShanJT
+END
+Podfile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Podfile
+END
+Podfile.lock
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Podfile.lock
+END
+Build_Script.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11425/iOS/trunk/QianShanJT/Build_Script.sh
+END

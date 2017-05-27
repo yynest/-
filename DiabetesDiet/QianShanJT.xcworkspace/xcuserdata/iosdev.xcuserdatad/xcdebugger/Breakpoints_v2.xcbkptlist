@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
+            landmarkName = "-requestSendVerifyCode"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
+            landmarkName = "-requestSendVerifyCode"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "-requestSendVerifyCode"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "599"
+            endingLineNumber = "599"
+            landmarkName = "-requestBSRecordBatch"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "603"
+            endingLineNumber = "603"
+            landmarkName = "-requestBSRecordBatch"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TestAPIVC requestBSRecordBatch]"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.779958"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "603"
+                  endingLineNumber = "603"
+                  offsetFromSymbolStart = "1104">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__33-[TestAPIVC requestBSRecordBatch]_block_invoke"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.781099"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "603"
+                  endingLineNumber = "603"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.248"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.782253"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "603"
+                  endingLineNumber = "603"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.249"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.783386"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "603"
+                  endingLineNumber = "603"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__33-[TestAPIVC requestBSRecordBatch]_block_invoke.251"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.784627"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "603"
+                  endingLineNumber = "603"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/Services/Networking/QSNetworkAgent.m"
+            timestampString = "516683996.08519"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-addRequest:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "692"
+            endingLineNumber = "692"
+            landmarkName = "-requestBSRecordQueryView"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TestAPIVC requestBSRecordQueryView]"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.78889"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "692"
+                  endingLineNumber = "692"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[TestAPIVC requestBSRecordQueryView]_block_invoke"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.790033"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "693"
+                  endingLineNumber = "693"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "699"
+            endingLineNumber = "699"
+            landmarkName = "-requestBSRecordQueryView"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[TestAPIVC requestBSRecordQueryView]_block_invoke"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.79308"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "699"
+                  endingLineNumber = "699"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[TestAPIVC requestBSRecordQueryView]_block_invoke"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.794307"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "699"
+                  endingLineNumber = "699"
+                  offsetFromSymbolStart = "352">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "703"
+            endingLineNumber = "703"
+            landmarkName = "-requestBSRecordQueryView"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TestAPIVC requestBSRecordQueryView]"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.797016"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "704"
+                  endingLineNumber = "704"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[TestAPIVC requestBSRecordQueryView]_block_invoke"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.79813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "704"
+                  endingLineNumber = "704"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.274"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.799377"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "704"
+                  endingLineNumber = "704"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.275"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.800508"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "704"
+                  endingLineNumber = "704"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__37-[TestAPIVC requestBSRecordQueryView]_block_invoke.277"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.801633"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "704"
+                  endingLineNumber = "704"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "696"
+            endingLineNumber = "696"
+            landmarkName = "-requestBSRecordQueryView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "592"
+            endingLineNumber = "592"
+            landmarkName = "-requestBSRecordBatch"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TestAPIVC requestBSRecordBatch]"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.80789"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "592"
+                  endingLineNumber = "592"
+                  offsetFromSymbolStart = "1012">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__33-[TestAPIVC requestBSRecordBatch]_block_invoke"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.809061"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "593"
+                  endingLineNumber = "593"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "652"
+            endingLineNumber = "652"
+            landmarkName = "-requestBSRecordListOfDateTime"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TestAPIVC requestBSRecordListOfDateTime]"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.812103"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "652"
+                  endingLineNumber = "652"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[TestAPIVC requestBSRecordListOfDateTime]_block_invoke"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/TestAPIVC.m"
+                  timestampString = "517566623.813267"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "653"
+                  endingLineNumber = "653"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/Common/UserDefaultsHelper.m"
+            timestampString = "517117984.558774"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "+addLocalCacheBloodData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/Services/UserInfoService.m"
+            timestampString = "517138215.147873"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "-requestRefreshTokenWithSuccessBlock:failureBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
+            landmarkName = "-requestSendVerifyCode"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286284.267848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "-requestGetUserQrcode"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286370.953532"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "-requestSendUserAdvice"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/TestAPIVC.m"
+            timestampString = "517286378.052255"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "-requestSendUserAdvice"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/Common/Tool/YYMonitorNetwork.m"
+            timestampString = "517397460.36017"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "-reachabilityChanged:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/Common/Tool/YYMonitorNetwork.m"
+            timestampString = "517397466.097733"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-reachabilityChanged:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+            timestampString = "517546657.468632"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "-requestDealShareDelete:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+            timestampString = "517546657.468632"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-requestDealShareDelete:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+            timestampString = "517546657.468632"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-requestDealShareDelete:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+            timestampString = "517546657.468632"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "-requestDealShareDelete:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UCShareBSData requestDealShareDelete:]"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+                  timestampString = "517566623.843288"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__40-[UCShareBSData requestDealShareDelete:]_block_invoke"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+                  timestampString = "517566623.844516"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.107"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+                  timestampString = "517566623.845662"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.108"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+                  timestampString = "517566623.846802"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__40-[UCShareBSData requestDealShareDelete:]_block_invoke.110"
+                  moduleName = "QianShanJT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Information/Study/Github/%E7%B3%96%E5%B0%BF%E7%97%85/DiabetesDiet/QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+                  timestampString = "517566623.847946"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/Common/H5WebView/WebLoadH5VC.m"
+            timestampString = "517546494.449259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-webView:didFailLoadWithError:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/ViewController/UserCenter/UCShareBSData.m"
+            timestampString = "517546657.468632"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
+            landmarkName = "-navRightBut:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/Common/ShareToOtherView.m"
+            timestampString = "517478328.324419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "-shareOtherPlat3Event"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QianShanJT/Classes/Common/ShareToOtherView.m"
+            timestampString = "517478345.892716"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "-sendMessage:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

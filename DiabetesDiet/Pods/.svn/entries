@@ -1,0 +1,95 @@
+10
+
+dir
+11998
+http://xiangf@192.168.1.95:8443/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/iOS/trunk/QianShanJT/Pods
+http://xiangf@192.168.1.95:8443/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B
+
+
+
+2017-05-08T09:29:05.945488Z
+11199
+lixiaolong
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+dc60a918-ccf5-cb4e-bee1-8f02b7de27f5
+
+Pods.xcodeproj
+dir
+
+Bugly
+dir
+
+MJRefresh
+dir
+
+Qiniu
+dir
+
+HappyDNS
+dir
+
+Target Support Files
+dir
+
+SDWebImage
+dir
+
+Headers
+dir
+
+Local Podspecs
+dir
+
+Manifest.lock
+file
+
+
+
+
+2017-05-03T00:40:02.000000Z
+3f9c63aba71bb24e3ce9223e6eff538d
+2017-05-03T03:07:01.456664Z
+11059
+xiangf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1411
+
+AFNetworking
+dir
+
+SVProgressHUD
+dir
+

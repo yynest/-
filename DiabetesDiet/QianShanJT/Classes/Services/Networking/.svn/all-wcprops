@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11856/iOS/trunk/QianShanJT/QianShanJT/Classes/Services/Networking
+END
+QSBaseRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11205/iOS/trunk/QianShanJT/QianShanJT/Classes/Services/Networking/QSBaseRequest.m
+END
+QSNetworkAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/Services/Networking/QSNetworkAgent.h
+END
+QSNetworkPrivate.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/Services/Networking/QSNetworkPrivate.m
+END
+QSNetworkAgent.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11510/iOS/trunk/QianShanJT/QianShanJT/Classes/Services/Networking/QSNetworkAgent.m
+END
+QSNetworkConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11856/iOS/trunk/QianShanJT/QianShanJT/Classes/Services/Networking/QSNetworkConfig.h
+END
+QSBaseRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11221/iOS/trunk/QianShanJT/QianShanJT/Classes/Services/Networking/QSBaseRequest.h
+END
+QSNetworkConfig.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11755/iOS/trunk/QianShanJT/QianShanJT/Classes/Services/Networking/QSNetworkConfig.m
+END
+QSNetworkPrivate.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/QianShanJT/Classes/Services/Networking/QSNetworkPrivate.h
+END

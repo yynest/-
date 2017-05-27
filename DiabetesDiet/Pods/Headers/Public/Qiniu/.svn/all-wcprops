@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu
+END
+QN_GTM_Base64.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QN_GTM_Base64.h
+END
+QNALAssetFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNALAssetFile.h
+END
+QNUserAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNUserAgent.h
+END
+QNRecorderDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNRecorderDelegate.h
+END
+QNAsyncRun.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNAsyncRun.h
+END
+QNResumeUpload.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNResumeUpload.h
+END
+QNFileRecorder.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNFileRecorder.h
+END
+QNUrlSafeBase64.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNUrlSafeBase64.h
+END
+QNPHAssetFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNPHAssetFile.h
+END
+QNConfiguration.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNConfiguration.h
+END
+QNFormUpload.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNFormUpload.h
+END
+QNResponseInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNResponseInfo.h
+END
+QNHttpDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNHttpDelegate.h
+END
+QNFileDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNFileDelegate.h
+END
+QNCrc32.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNCrc32.h
+END
+QNUploadOption.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNUploadOption.h
+END
+QNSessionManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNSessionManager.h
+END
+QNPHAssetResource.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNPHAssetResource.h
+END
+QNFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNFile.h
+END
+QNUploadManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNUploadManager.h
+END
+QNEtag.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNEtag.h
+END
+QNUploadOption+Private.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNUploadOption+Private.h
+END
+QNSystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNSystem.h
+END
+QNUpToken.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNUpToken.h
+END
+QNVersion.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QNVersion.h
+END
+QiniuSDK.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Headers/Public/Qiniu/QiniuSDK.h
+END

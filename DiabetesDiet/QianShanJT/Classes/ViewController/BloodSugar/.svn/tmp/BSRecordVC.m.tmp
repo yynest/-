@@ -1,0 +1,298 @@
+//
+//  BSRecordVC.m
+//  QianShanJT
+//
+//  Created by Xiaomei on 2017/5/15.
+//  Copyright © 2017年 QSYJ. All rights reserved.
+//
+
+#import "BSRecordVC.h"
+#import "DYScrollRulerView.h"
+#import "ZHPickView.h"
+#import "QSBaseRequest.h"
+#import "BSResultVC.h"
+@interface BSRecordVC ()<DYScrollRulerDelegate,ZHPickViewDelegate>
+{
+
+    CGFloat myValue;
+    NSDate *selectDate;
+}
+@property(nonatomic,strong)DYScrollRulerView *rullerView;
+@property(nonatomic,strong)  NSMutableArray  *detailArr;
+
+@end
+
+@implementation BSRecordVC
+
+-(NSMutableArray *)detailArr{
+    NSDateFormatter *inputFormatter = [[NSDateFormatter alloc] init];
+    [inputFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    [inputFormatter setDateFormat:@"yyyy年MM月dd日"];
+    NSString* inputDate = [inputFormatter stringFromDate:[NSDate date]];
+   
+ 
+    if (_detailArr == nil) {
+        _detailArr = [[NSMutableArray alloc]initWithArray:@[inputDate,[ToolBox getTimeParagraphFromHour:[NSDate date]]]];
+         selectDate = [NSDate date];
+    }
+    return _detailArr;
+}
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationController.navigationBarHidden = NO ;
+    self.view.backgroundColor = [UIColor colorBGGragLighter];
+   
+    baseTableView.frame = CGRectMake(0, 0, viewWidth, viewHeight - 64 - 50);
+    baseTableView.bounces = NO;
+
+    self.NavLeftImage = @"backArrow";
+    self.navTitle = @"血糖记录";
+    baseTableView.rowHeight = [ToolScreenFit getHeightWithControlHeight:60];
+    
+    UIView *footView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, viewWidth, 100)];
+    UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    saveBtn.frame = CGRectMake(40, 20, viewWidth - 80, 70);
+    [saveBtn setTitle:@"保存" forState:UIControlStateNormal];
+    [saveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [saveBtn setBackgroundImage:[UIImage imageNamed:@"loginBk"] forState:UIControlStateNormal];
+    [saveBtn addTarget:self action:@selector(toSave) forControlEvents:UIControlEventTouchUpInside];
+    [footView addSubview:saveBtn];
+    baseTableView.tableFooterView = footView;
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(20, viewHeight - 64 - 60, viewWidth - 40, 40)];
+    label.textColor = [UIColor colorTextGragLight];
+    label.numberOfLines = 0;
+    [ToolFontFit setFontFromLabel:label FontType:FontTypeNormal WithType:NormalFontTypeExplanation];
+    label.text = @"苟有恒，何必三更起五更眠，最无益，只怕一日曝十日寒";
+    [self.view addSubview:label];
+    
+    UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake(20, viewHeight - 64 - 25, viewWidth - 40, 20)];
+    label2.textColor = [UIColor colorTextGragLight];
+    label2.textAlignment = NSTextAlignmentRight;
+    [ToolFontFit setFontFromLabel:label2 FontType:FontTypeNormal WithType:NormalFontTypeExplanation];
+    label2.text = @"-毛泽东";
+    [self.view addSubview:label2];
+}
+
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 3;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+
+    return 10;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (indexPath.section < 2) {
+        return [ToolScreenFit getHeightWithControlHeight:50];
+    }
+    return 190;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    
+    return 0.1;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"RecordCell";
+    
+    
+    UITableViewCell *cell = (UITableViewCell*)[tableView  dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(cell == nil)
+    {
+        
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0); // ViewWidth  [宏] 指的是手机屏幕的宽度
+        [ToolFontFit setFontFromLabel:cell.textLabel FontType:FontTypeNormal WithType:NormalFontTypeMainbody1];
+        [ToolFontFit setFontFromLabel:cell.detailTextLabel FontType:FontTypeNormal WithType:NormalFontTypeMainbody2];
+    }
+    
+    for (UIView *view in cell.contentView.subviews) {
+        [view removeFromSuperview];
+    }
+    
+    NSArray *textArr = @[@"日期",@"时间"];
+   
+    if (indexPath.section < 2) {
+        cell.textLabel.text = textArr[indexPath.section];
+        UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake( MAIN_SCREEN_WIDTH - 250,0, 210, [ToolScreenFit getHeightWithControlHeight:50])];
+        label2.text = self.detailArr[indexPath.section];
+        label2.textAlignment = NSTextAlignmentRight;
+        label2.textColor = [UIColor colorTextGrag];
+        [ToolFontFit setFontFromLabel:label2 FontType:FontTypeNormal WithType:NormalFontTypeMainbody2];
+        [cell.contentView addSubview:label2];
+
+        //箭头
+        UIButton *arrowBut = [UIButton buttonWithType:UIButtonTypeCustom];
+        arrowBut.frame = CGRectMake(viewWidth - 30, [ToolScreenFit getHeightWithControlHeight:50]/2 - 7.5, 8, 15);
+        [arrowBut setImage:[UIImage imageNamed:@"home_arrow2"] forState:UIControlStateNormal];
+        [cell.contentView addSubview:arrowBut];
+
+    }else if (indexPath.section == 2){
+    
+//        self.rullerView.layer.shadowColor = [UIColor grayColor].CGColor;//shadowColor阴影颜色
+//        self.rullerView.layer.shadowOffset = CGSizeMake(0,1);//shadowOffset阴影偏移,x向右偏移4，y向下偏移4，默认(0, -3),这个跟shadowRadius配合使用
+//        self.rullerView.layer.shadowOpacity = 0.5;//阴影透明度，默认0
+//        self.rullerView.layer.shadowRadius = 1;//阴影半径，默认3
+//        self.rullerView.layer.cornerRadius = 2;
+//        
+//
+        
+        UIImageView  *bgImage = [[UIImageView alloc]initWithFrame:CGRectMake(10, 70, viewWidth - 20, 70)];
+        bgImage.image = [UIImage imageNamed:@"biaochi"];
+        bgImage.userInteractionEnabled = YES;
+        [cell.contentView addSubview:bgImage];
+        [bgImage addSubview:self.rullerView];
+        
+        
+        
+        
+        UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake( 0, [DYScrollRulerView rulerViewHeight] + 30, viewWidth,20)];
+        label2.text = @"左右滑动调整血糖值";
+        label2.textAlignment = NSTextAlignmentCenter;
+        label2.textColor = [UIColor colorTextGrag];
+        [ToolFontFit setFontFromLabel:label2 FontType:FontTypeNormal WithType:NormalFontTypeMainbody2];
+        [cell.contentView addSubview:label2];
+        
+    }
+       return cell;
+    
+    
+}// 创建（复用）单元格
+
+#pragma mark - TableView Datasource
+
+-(DYScrollRulerView *)rullerView{
+    if (!_rullerView) {
+        
+        CGFloat rullerHeight = [DYScrollRulerView rulerViewHeight];
+        _rullerView = [[DYScrollRulerView alloc]initWithFrame:CGRectMake(10, -55, viewWidth - 40, rullerHeight) theMinValue:0 theMaxValue:34 theStep:0.1 theUnit:@"" theNum:10];
+        [_rullerView setDefaultValue:4.4 animated:YES];
+        myValue = 4.4;
+        _rullerView.bgColor = [UIColor whiteColor];
+        _rullerView.triangleColor   = [UIColor colorMainGreen];
+        _rullerView.delegate        = self;
+        _rullerView.scrollByHand    = YES;
+    }
+    return _rullerView;
+}
+#pragma mark - YKScrollRulerDelegate
+-(void)dyScrollRulerView:(DYScrollRulerView *)rulerView valueChange:(float)value{
+    
+    NSLog(@"value->%.f",value);
+    myValue = value;
+    
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (indexPath.section == 0) {
+     //   NSDate *date = [NSDate date];
+        ZHPickView *pickview=[[ZHPickView alloc] initDatePickWithDate:selectDate title:@"日期" datePickerMode:UIDatePickerModeDate isHaveNavControler:NO];
+        pickview.tag = 100;
+        pickview.delegate = self;
+        pickview.datePicker.maximumDate = [NSDate date];
+        [pickview show];
+        [pickview setDefaultSelectDate:selectDate];
+    }else if (indexPath.section == 1){
+       
+        ZHPickView *pickview = [[ZHPickView alloc] initPickviewWithArray:[ToolBox getTimeArray] isHaveNavControler:NO];
+        [pickview setTitle:@"时间"];
+        pickview.tag = 200;
+        pickview.delegate = self;
+        
+        [pickview setDefaultSelectRow:[[ToolBox getTimeTypeWithString:self.detailArr[1]] integerValue] - 1];
+        [pickview show];
+
+    }
+}
+-(void)toobarDonBtnHaveClick:(ZHPickView *)pickView result:(id)result{
+
+    if (pickView.tag == 100) {
+     
+        NSDateFormatter *inputFormatter = [[NSDateFormatter alloc] init];
+        [inputFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+        [inputFormatter setDateFormat:@"yyyy年MM月dd日"];
+        NSString* inputDate = [inputFormatter stringFromDate:pickView.datePicker.date];
+        DLog(@"%@",inputDate);
+        selectDate = pickView.datePicker.date;
+        [self.detailArr replaceObjectAtIndex:0 withObject:inputDate];
+        [baseTableView reloadData];
+    }else{
+        [self.detailArr replaceObjectAtIndex:1 withObject:result];
+        [baseTableView reloadData];
+    }
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+-(void)toSave{
+  
+    NSString *type;
+    type = [ToolBox getTimeTypeWithString:self.detailArr[1]];
+   
+        NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+        [dic sf_setObject:[NSNumber numberWithFloat:myValue] forKey:@"bsValue"];
+        [dic sf_setObject:@"0" forKey:@"lat"];
+        [dic sf_setObject:@"0" forKey:@"lng"];
+        [dic sf_setObject:[NSString stringWithFormat:@"%0.0f",[ToolBox getCurrentTimeInterval]] forKey:@"recordTime"];
+        [dic sf_setObject:type forKey:@"timeType"];
+        NSString *url = @"/bsrecord/add";
+        //请求
+        QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+        [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+            NSUInteger error = request.responseStatusCode;
+            DLog(@"%@",request.responseJSONObject);
+            if (error == 0) {
+                //处理数据
+                BSResultVC *vc = [[BSResultVC alloc]init];
+                vc.type = type;
+                vc.myBSValue = [NSString stringWithFormat:@"%.1f",myValue];
+                [self.navigationController presentViewController:vc animated:YES completion:^{
+                    
+                }];
+            }
+            else{
+                [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+                DLog(@"接口(%@)fail data",url);
+            }
+        } failure:^(QSBaseRequest *request) {
+            [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+            DLog(@"接口(%@) fail network",url);
+        }];
+        
+
+}
+
+
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

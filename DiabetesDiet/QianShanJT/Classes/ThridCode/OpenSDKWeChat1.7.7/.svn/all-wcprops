@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11205/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/OpenSDKWeChat1.7.7
+END
+libWeChatSDK.a
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11205/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/OpenSDKWeChat1.7.7/libWeChatSDK.a
+END
+WXApiObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11205/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/OpenSDKWeChat1.7.7/WXApiObject.h
+END
+WechatAuthSDK.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11205/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/OpenSDKWeChat1.7.7/WechatAuthSDK.h
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11205/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/OpenSDKWeChat1.7.7/README.txt
+END
+WXApi.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11205/iOS/trunk/QianShanJT/QianShanJT/Classes/ThridCode/OpenSDKWeChat1.7.7/WXApi.h
+END

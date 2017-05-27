@@ -1,0 +1,17 @@
+#platform :ios, '6.0'
+
+target 'QianShanJT' do
+    pod 'AFNetworking',	'~> 3.0'
+    pod 'Bugly'
+    pod 'SDWebImage', '~>3.8'
+    pod 'MJRefresh', '~> 3.1.12'
+    pod 'Qiniu', '~> 7.1'
+    pod 'SVProgressHUD', '~> 2.1.2'
+    
+end
+
+
+
+#1.cd /Volumes/Information/Project/Code/QSYJ/iOS/trunk/QianShan
+#2.pod install
+#3.pod update

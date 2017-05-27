@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking
+END
+AFHTTPSessionManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.m
+END
+AFURLResponseSerialization.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.m
+END
+AFNetworkReachabilityManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h
+END
+AFURLSessionManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFURLSessionManager.m
+END
+AFNetworking.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFNetworking.h
+END
+AFSecurityPolicy.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h
+END
+AFURLRequestSerialization.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h
+END
+AFNetworkReachabilityManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m
+END
+AFSecurityPolicy.m
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.m
+END
+AFHTTPSessionManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h
+END
+AFURLRequestSerialization.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.m
+END
+AFURLResponseSerialization.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h
+END
+AFURLSessionManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h
+END

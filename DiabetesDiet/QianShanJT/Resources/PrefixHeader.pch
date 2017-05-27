@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  QianShanJT
+//
+//  Created by iosdev on 2017/5/3.
+//  Copyright © 2017年 QSYJ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "CommonDefined.h"
+#import "NSArray+Safe.h"
+#import "NSMutableDictionary+Safe.h"
+#import "UIColor+Custom.h"
+#import "NSDate+YYDate.h"
+
+#import "ToolBox.h"
+#import "UserDefaultsHelper.h"
+#import "ToolScreenFit.h"
+
+
+#import "SVProgressHUD.h"
+#import "UIImageView+WebCache.h"
+#import "MD5Encrypt.h"
+
+
+// 此宏用来替换NSLocalizedString
+#define QSText(key) \
+[[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
+
+//打印log:输出需要信息的同时, 还输出所在类、 函数(方法)名以及行数
+
+
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define DLog(...)
+#endif
+
+
+
+#endif /* PrefixHeader_pch */

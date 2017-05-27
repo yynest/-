@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Qiniu/QiniuSDK/Http
+END
+QNHttpDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Qiniu/QiniuSDK/Http/QNHttpDelegate.h
+END
+QNResponseInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Qiniu/QiniuSDK/Http/QNResponseInfo.h
+END
+QNUserAgent.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Qiniu/QiniuSDK/Http/QNUserAgent.h
+END
+QNSessionManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Qiniu/QiniuSDK/Http/QNSessionManager.h
+END
+QNResponseInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Qiniu/QiniuSDK/Http/QNResponseInfo.m
+END
+QNUserAgent.m
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Qiniu/QiniuSDK/Http/QNUserAgent.m
+END
+QNSessionManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/Qiniu/QiniuSDK/Http/QNSessionManager.m
+END

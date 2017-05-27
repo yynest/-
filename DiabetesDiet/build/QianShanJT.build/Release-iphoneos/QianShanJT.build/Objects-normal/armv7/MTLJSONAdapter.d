@@ -1,0 +1,22 @@
+dependencies: \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/Common/Tool/MD5Encrypt.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/Common/Tool/ToolScreenFit.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/Common/UserDefaultsHelper.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/Common/Tool/ToolBox.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/Category/YYDate/NSDate+YYDate.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/Common/Tool/UIColor+Custom.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/Category/NSMutableDictionary+Safe.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/Category/NSArray+Safe.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/Common/CommonDefined.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Resources/PrefixHeader.pch \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLJSONAdapter.m \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSDictionary+MTLJSONKeyPath.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/extobjc/EXTRuntimeExtensions.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/extobjc/EXTScope.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/extobjc/metamacros.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLJSONAdapter.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLModel.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLTransformerErrorHandling.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLReflection.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h \
+  /Volumes/Information/Project/2017/QianShanJT/QianShanJT/Classes/ThridCode/Mantle/Mantle/MTLValueTransformer.h

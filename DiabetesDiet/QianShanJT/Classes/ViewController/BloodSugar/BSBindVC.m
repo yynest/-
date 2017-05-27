@@ -1,0 +1,71 @@
+//
+//  BSBindVC.m
+//  QianShanJT
+//
+//  Created by Xiaomei on 2017/5/18.
+//  Copyright © 2017年 QSYJ. All rights reserved.
+//
+
+#import "BSBindVC.h"
+#import "UIViewExt.h"
+@interface BSBindVC ()
+
+@end
+
+@implementation BSBindVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.edgesForExtendedLayout = NO;
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navTitle = @"血糖仪";
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake([ToolScreenFit getHeightWithControlHeight:45], 20,[ToolScreenFit getHeightWithControlHeight:286], [ToolScreenFit getHeightWithControlHeight:330])];
+    imageView.image = [UIImage imageNamed:@"bind"];
+    [self.view addSubview:imageView];
+    
+    UIButton *bindBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    bindBtn.frame = CGRectMake(40, imageView.bottom , viewWidth - 80, 90);
+    bindBtn.frame = CGRectMake(0, 0, [ToolScreenFit getHeightWithControlHeight:276],86);
+    bindBtn.center = CGPointMake(viewWidth/2, imageView.bottom);
+    [bindBtn setTitle:@"绑定设备" forState:UIControlStateNormal];
+    [bindBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [bindBtn setBackgroundImage:[UIImage imageNamed:@"com_bt_nor"] forState:UIControlStateNormal];
+    [bindBtn setBackgroundImage:[UIImage imageNamed:@"com_bt_high"] forState:UIControlStateHighlighted];
+    [bindBtn setBackgroundImage:[UIImage imageNamed:@"com_bt_dis"] forState:UIControlStateDisabled];
+    [bindBtn addTarget:self action:@selector(bind) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bindBtn];
+
+    UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    saveBtn.frame = CGRectMake(40, bindBtn.bottom + 30, viewWidth - 80, 50);
+    saveBtn.frame = CGRectMake(0, 0, [ToolScreenFit getHeightWithControlHeight:276]- 4,50);
+    saveBtn.center = CGPointMake(viewWidth/2, bindBtn.bottom + 30);
+    [saveBtn setTitle:@"没有设备,想买一台" forState:UIControlStateNormal];
+    [saveBtn setTitleColor:[UIColor colorMainGreen] forState:UIControlStateNormal];
+    [saveBtn setBackgroundImage:[UIImage imageNamed:@"buy_nor"] forState:UIControlStateNormal];
+    [saveBtn setBackgroundImage:[UIImage imageNamed:@"buy_high"] forState:UIControlStateHighlighted];
+   // [saveBtn setBackgroundImage:[UIImage imageNamed:@"com_bt_dis"] forState:UIControlStateDisabled];
+    [saveBtn addTarget:self action:@selector(buy) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:saveBtn];
+
+}
+
+- (void)viewWillAppear:(BOOL)animated  {
+    [super viewWillAppear:animated];
+    
+}
+
+-(void)bind{
+
+}
+
+-(void)buy{
+
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+
+}
+
+
+@end

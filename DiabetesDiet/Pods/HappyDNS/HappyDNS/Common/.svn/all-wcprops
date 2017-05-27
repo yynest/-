@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common
+END
+QNNetworkInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNNetworkInfo.m
+END
+QNLruCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNLruCache.m
+END
+QNDomain.m
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNDomain.m
+END
+QNResolverDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNResolverDelegate.h
+END
+QNRecord.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNRecord.h
+END
+QNDnsManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNDnsManager.h
+END
+QNRecord.m
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNRecord.m
+END
+QNDnsManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNDnsManager.m
+END
+QNNetworkInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNNetworkInfo.h
+END
+QNLruCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNLruCache.h
+END
+QNDomain.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/%E5%8D%83%E5%B1%B1%E9%99%8D%E5%8E%8B/!svn/ver/11059/iOS/trunk/QianShanJT/Pods/HappyDNS/HappyDNS/Common/QNDomain.h
+END

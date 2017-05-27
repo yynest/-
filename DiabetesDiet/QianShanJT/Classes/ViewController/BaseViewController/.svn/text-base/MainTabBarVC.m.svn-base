@@ -1,0 +1,62 @@
+//
+//  MainTabBarVC.m
+//  QianShan
+//
+//  Created by iosdev on 2016/10/17.
+//  Copyright © 2016年 QSYJ. All rights reserved.
+//
+
+#import "MainTabBarVC.h"
+#import "CustomNavigationController.h"
+#import "BSMainVC.h"
+#import "UCMainVC.h"
+#import "QSBaseRequest.h"
+#import "UserInfoService.h"
+#import "QNManager.h"
+
+@interface MainTabBarVC ()
+
+@end
+
+@implementation MainTabBarVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [UITabBar appearance].translucent = NO;
+    [UITabBar appearance].backgroundColor = [UIColor whiteColor];
+    NSDictionary *dicNor = @{NSForegroundColorAttributeName: [UIColor colorTextGrag],NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.0f]};
+    NSDictionary *dicSel = @{NSForegroundColorAttributeName: [UIColor colorMainGreen],NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:12.0f]};
+//    NSDictionary *dicNor = @{NSForegroundColorAttributeName: [UIColor colorTextGrag]};
+//    NSDictionary *dicSel = @{NSForegroundColorAttributeName: [UIColor colorMainGreen]};
+    [[UITabBarItem appearance] setTitleTextAttributes:dicNor forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:dicSel forState:UIControlStateSelected];
+    
+    BSMainVC *bsMainVC = [[BSMainVC alloc] init];
+    bsMainVC.navTitle = @"远程问诊";
+    bsMainVC.tabBarItem.title = @"首页";
+    bsMainVC.tabBarItem.image = [[UIImage imageNamed:@"home2"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    bsMainVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"home1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    CustomNavigationController *bsNav = [[CustomNavigationController alloc] initWithRootViewController:bsMainVC];
+    bsNav.navigationBarHidden = YES;
+    
+    UCMainVC *ucMainVC = [[UCMainVC alloc] init];
+    ucMainVC.navTitle = @"个人中心";
+    ucMainVC.tabBarItem.title = @"我的";
+    ucMainVC.tabBarItem.image=[[UIImage imageNamed:@"mine2"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    ucMainVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"mine1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    CustomNavigationController *ucNav = [[CustomNavigationController alloc] initWithRootViewController:ucMainVC];
+    ucNav.navigationBarHidden = YES;
+    self.viewControllers = @[bsNav,ucNav];
+    
+
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+
+@end

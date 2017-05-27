@@ -1,0 +1,696 @@
+//
+//  TestAPIVC.m
+//  QianShanJT
+//
+//  Created by iosdev on 2017/5/8.
+//  Copyright © 2017年 QSYJ. All rights reserved.
+//
+
+#import "TestAPIVC.h"
+#import "QSBaseRequest.h"
+
+//查询个人资料
+#import "UserInfoData.h"
+#import "UserInfoPicture.h"
+#import "UserInfoModel.h"
+#import "UserInfoUser.h"
+
+//用户手机号码登录
+#import "LoginUserInfoTokenMsg.h"
+#import "LoginUserInfoData.h"
+#import "LoginUserInfoPicture.h"
+#import "LoginUserInfoModel.h"
+#import "LoginUserInfoUser.h"
+
+//查询首页数据
+#import "HomeIndexBsStatistics.h"
+#import "HomeIndexPicture.h"
+#import "HomeIndexData.h"
+#import "HomeIndexModel.h"
+#import "HomeIndexUser.h"
+
+
+@interface TestAPIVC ()
+
+@end
+
+@implementation TestAPIVC
+
+- (instancetype)init {
+    if (self = [super init]) {
+        [self testAPI];
+    }
+    return self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)testAPI {
+    //发送登陆验证码
+//    [self requestSendVerifyCode];
+
+    //用户手机号码登录
+//    [self requestLoginMobile];
+    
+    //查询个人资料
+//    [self requestGetUserInfo];
+    
+    //查询首页数据
+//    [self requestUpdateHomeData];
+    
+    //记录血糖数据信息
+    [self requestBSRecordAdd];
+    
+    //查询某一天、某一阶段的血糖记录数据信息
+//    [self requestBSRecordListOfDateTime];
+    
+    //记录血糖数据信息
+//    [self requestBSRecordQueryView];
+}
+
+/*
+ 接口:
+/sms/sendVerifyCode 发送登陆验证码
+ 参数:
+ mobile (string, optional): 手机号码 ,
+ smsType (integer, optional): 验证码类型 0 短信验证码 1 语音验证码
+ source (integer, optional): 验证码源 1 登录验证 2 第三方身份绑定
+ 返回值：
+ errCode (integer, optional): 错误代码 ,
+ errMsg (string, optional): 错误信息
+ data (object, optional),
+ */
+- (void)requestSendVerifyCode {
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    [dic sf_setObject:@"13480600455" forKey:@"mobile"];
+    [dic sf_setObject:[NSNumber numberWithInt:0] forKey:@"smsType"];
+    [dic sf_setObject:[NSNumber numberWithInt:1] forKey:@"source"];
+    NSString *url = @"/sms/sendVerifyCode";
+    //请求
+    QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+    [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+        NSUInteger error = request.responseStatusCode;
+        if (error == 0) {
+            //处理数据
+            
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+            DLog(@"接口(%@)fail data",url);
+        }
+    } failure:^(QSBaseRequest *request) {
+        [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+        DLog(@"接口(%@) fail network",url);
+    }];
+}
+
+
+/*
+ 接口:
+ /user/bind 用户第三方账号登录
+ 参数:
+ identity (string, optional): 唯一编码 ,
+ mobile (string, optional): 手机号码 ,
+ platform (integer, optional): 平台 ,
+ unionid (string, optional): 微信unionid ,
+ verifyCode (string, optional): 校验码
+ 返回值：
+ errCode:
+ 10001 签名错误
+ 12006 第三方身份参数不能为空
+ 12008 unionId不能为空
+ 12005 第三方用户身份不允许为空
+ 12001 手机号码不允许为空
+ 12002 短信验证码不允许为空
+ 12011 LOGIN_SMS_VC_DB_NULL
+ 12003 登陆短信验证码不匹配
+ 12010 验证码超时
+ 12015 微信账户已被绑定过
+ errMsg (string, optional): 错误信息
+ data (UserBindResponse, optional),
+ 
+ UserBindResponse {
+ tokenMsg (TokenMsg, optional): token信息 ,
+ user (User, optional): 用户数据信息
+ }
+ TokenMsg {
+ access_token (string, optional),
+ expires_in (integer, optional),
+ refresh_token (string, optional),
+ token_type (string, optional)
+ }
+ User {
+ address (string, optional),
+ area (string, optional),
+ birthday (string, optional),
+ bsInited (integer, optional): 血糖APP是否初始化过 0:未初始化 1:已初始化 ,
+ bsSikeage (integer, optional): 血糖年限 ,
+ bsType (integer, optional): 血糖类型 1 1型糖尿病 2 2型糖尿病 3 妊娠糖尿病 4 其他类型 ,
+ bsVersion (string, optional),
+ city (string, optional),
+ createTime (string, optional),
+ devicetoken (string, optional),
+ headPictureId (integer, optional),
+ height (integer, optional): 身高 ,
+ highpressure (integer, optional),
+ id (integer, optional),
+ inited (integer, optional),
+ lastLoginTime (string, optional),
+ lowpressure (integer, optional),
+ mobile (string, optional),
+ modifyTime (string, optional),
+ name (string, optional),
+ operation (string, optional),
+ picture (Picture, optional),
+ province (string, optional),
+ role (integer, optional),
+ sex (integer, optional),
+ sickage (integer, optional),
+ source (string, optional),
+ status (string, optional),
+ unionId (string, optional),
+ version (string, optional),
+ wechatOpenid (string, optional),
+ weight (integer, optional): 体重
+ }
+ Picture {
+ height (integer, optional),
+ id (integer, optional),
+ md5 (string, optional),
+ name (string, optional),
+ path (string, optional),
+ size (integer, optional),
+ suffix (string, optional),
+ uploadTime (string, optional),
+ userId (integer, optional),
+ width (integer, optional)
+ }
+ */
+- (void)requestUserBind {
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    [dic sf_setObject:@"13480600455" forKey:@"identity"];
+    [dic sf_setObject:@"13480600455" forKey:@"mobile"];
+    [dic sf_setObject:[NSNumber numberWithInt:2] forKey:@"platform"];
+    [dic sf_setObject:@"13480600455" forKey:@"unionid"];
+    [dic sf_setObject:[NSNumber numberWithInt:1] forKey:@"verifyCode"];
+    NSString *url = @"/user/bind";
+    //请求
+    QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+    [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+        NSUInteger error = request.responseStatusCode;
+        if (error == 0) {
+            //处理数据
+            
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+            DLog(@"接口(%@)fail data",url);
+        }
+    } failure:^(QSBaseRequest *request) {
+        [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+        DLog(@"接口(%@) fail network",url);
+    }];
+}
+
+/*
+ 接口:
+ /user/login/mobile 用户手机号码登录
+ 参数:
+ mobile (string, optional): 手机号码 ,
+ verifyCode (string, optional): 校验码
+ 返回值：
+ errCode:
+ errMsg (string, optional): 错误信息
+ data (UserInfoGetResponse, optional),
+*/
+- (void)requestLoginMobile {
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    [dic sf_setObject:@"13480600455" forKey:@"mobile"];
+    [dic sf_setObject:@"1111" forKey:@"verifyCode"];
+    NSString *url = @"/user/login/mobile";
+    //请求
+    QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+    [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+        NSUInteger error = request.responseStatusCode;
+        if (error == 0) {
+            //处理数据
+            LoginUserInfoModel *model = [LoginUserInfoModel modelObjectWithDictionary:request.responseJSONObject];
+            DLog(@"接口数据:%@",model);  
+            //保存id
+            [UserInfoService sharedInstance].userId = [NSNumber numberWithDouble:model.data.user.userIdentifier];
+            [UserDefaultsHelper setLoginUserID:[UserInfoService sharedInstance].userId];
+            //保存token
+            [UserDefaultsHelper setAccessToken:model.data.tokenMsg.accessToken];
+            [UserDefaultsHelper setAccessToken:model.data.tokenMsg.refreshToken];
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+            DLog(@"接口(%@)fail data",url);
+        }
+    } failure:^(QSBaseRequest *request) {
+        [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+        DLog(@"接口(%@) fail network",url);
+    }];
+}
+
+
+/*
+ 接口:
+/user/info/get 查询个人资料
+ 参数:
+ 无
+ 返回值：
+ errCode:
+ errMsg (string, optional): 错误信息
+ data (UserInfoGetResponse, optional),
+ 
+ UserInfoGetResponse {
+ user (User, optional)
+ }
+ User {
+ address (string, optional),
+ area (string, optional),
+ birthday (string, optional),
+ bsInited (integer, optional): 血糖APP是否初始化过 0:未初始化 1:已初始化 ,
+ bsSikeage (integer, optional): 血糖年限 ,
+ bsType (integer, optional): 血糖类型 1 1型糖尿病 2 2型糖尿病 3 妊娠糖尿病 4 其他类型 ,
+ bsVersion (string, optional),
+ city (string, optional),
+ createTime (string, optional),
+ devicetoken (string, optional),
+ headPictureId (integer, optional),
+ height (integer, optional): 身高 ,
+ highpressure (integer, optional),
+ id (integer, optional),
+ inited (integer, optional),
+ lastLoginTime (string, optional),
+ lowpressure (integer, optional),
+ mobile (string, optional),
+ modifyTime (string, optional),
+ name (string, optional),
+ operation (string, optional),
+ picture (Picture, optional),
+ province (string, optional),
+ role (integer, optional),
+ sex (integer, optional),
+ sickage (integer, optional),
+ source (string, optional),
+ status (string, optional),
+ unionId (string, optional),
+ version (string, optional),
+ wechatOpenid (string, optional),
+ weight (integer, optional): 体重
+ }
+ Picture {
+ height (integer, optional),
+ id (integer, optional),
+ md5 (string, optional),
+ name (string, optional),
+ path (string, optional),
+ size (integer, optional),
+ suffix (string, optional),
+ uploadTime (string, optional),
+ userId (integer, optional),
+ width (integer, optional)
+ }
+ */
+- (void)requestGetUserInfo {
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    NSString *url = @"/user/info/get";
+    //请求
+    QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+    [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+        NSUInteger error = request.responseStatusCode;
+        if (error == 0) {
+            //处理数据
+            UserInfoModel *model = [UserInfoModel modelObjectWithDictionary:request.responseJSONObject];
+            DLog(@"接口数据:%@",model);
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+            DLog(@"接口(%@)fail data",url);
+        }
+    } failure:^(QSBaseRequest *request) {
+        [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+        DLog(@"接口(%@) fail network",url);
+    }];
+}
+
+/*
+ 接口:
+ /user/info/update 修改个人资料
+ 
+ 参数:
+ bsSikeage (integer, optional): 患病年限 ,
+ bsType (integer, optional): 血糖级别 ,
+ headPic (string, optional): 头像地址 ,
+ height (integer, optional): 身高 ,
+ isOverride (string, optional): 头像是否判断覆盖 0 不判断直接覆盖 1 判断是否存在头像 如果存在不覆盖并且不更新头像 ,
+ name (string, optional): 姓名 ,
+ sex (integer, optional): 性别 ,0 无知 1 男 2 女
+ weight (integer, optional): 体重
+ 
+ 返回值：
+ errCode:
+ errMsg (string, optional): 错误信息
+ data (UserInfoGetResponse, optional),
+ */
+- (void)requestUpdateUserInfo {
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    [dic sf_setObject:[NSNumber numberWithInt:1] forKey:@"bsSikeage"];
+    [dic sf_setObject:[NSNumber numberWithInt:1] forKey:@"bsType"];
+    [dic sf_setObject:@"head" forKey:@"headPic"];
+    [dic sf_setObject:[NSNumber numberWithInt:1] forKey:@"height"];
+    [dic sf_setObject:@"0" forKey:@"isOverride"];
+    [dic sf_setObject:@"name" forKey:@"name"];
+    [dic sf_setObject:[NSNumber numberWithInt:1] forKey:@"sex"];
+    [dic sf_setObject:[NSNumber numberWithInt:1] forKey:@"weight"];
+    
+    NSString *url = @"/user/info/update";
+    //请求
+    QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+    [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+        NSUInteger error = request.responseStatusCode;
+        if (error == 0) {
+            //处理数据
+            UserInfoModel *model = [UserInfoModel modelObjectWithDictionary:request.responseJSONObject];
+            DLog(@"接口数据:%@",model);
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+            DLog(@"接口(%@)fail data",url);
+        }
+    } failure:^(QSBaseRequest *request) {
+        [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+        DLog(@"接口(%@) fail network",url);
+    }];
+}
+
+//获取首页数据
+/*
+ ApiResponse«HomeIndexResponse» {
+ data (HomeIndexResponse, optional),
+ errCode (integer, optional): 错误代码 ,
+ errMsg (string, optional): 错误信息
+ }
+ HomeIndexResponse {
+ bsRecord (BloodsugarRecord, optional): 最近的一条血糖记录数据信息 ,
+ bsStatistics (UserBSStatistics, optional): 最近一周的血糖统计结果信息 ,
+ user (User, optional): 用户基本信息
+ }
+ BloodsugarRecord {
+ bsResult (string, optional): 血糖结果 1 低血糖 2 血糖偏低 3 正常血糖 4 血糖偏高 ,
+ bsResultRemark (string, optional): 血糖值说明 ,
+ bsValue (number, optional): 血糖值 ,
+ createTime (string, optional): 创建时间 ,
+ id (integer, optional): 编码 ,
+ lat (string, optional): 纬度 ,
+ lng (string, optional): 经度 ,
+ recordTime (string, optional): 记录时间 ,
+ state (integer, optional): 返回1有效的 ,
+ timeType (string, optional): 时间类型 1 凌晨前 2 早餐前 3 早餐后 4 午餐前 5 午餐后 6 睡前 7 晚餐前 8 晚餐后 ,
+ userId (integer, optional): 用户id
+ }
+ UserBSStatistics {
+ endTime (string, optional): 统计的结果时间 为空时 统计所有的 ,
+ heightCount (integer, optional): 偏高记录数 ,
+ lowCount (integer, optional): 偏低记录数 ,
+ normalCount (integer, optional): 正常记录数 ,
+ startTime (string, optional): 统计的开始时间 为空时 统计所有的
+ }
+ User {
+ address (string, optional),
+ area (string, optional),
+ birthday (string, optional),
+ bsInited (integer, optional): 血糖APP是否初始化过 0:未初始化 1:已初始化 ,
+ bsSikeage (integer, optional): 血糖年限 ,
+ bsType (integer, optional): 血糖类型 1 1型糖尿病 2 2型糖尿病 3 妊娠糖尿病 4 其他类型 ,
+ bsVersion (string, optional),
+ city (string, optional),
+ createTime (string, optional),
+ devicetoken (string, optional),
+ headPictureId (integer, optional),
+ height (integer, optional): 身高 ,
+ highpressure (integer, optional),
+ iconUrl (string, optional),
+ id (integer, optional),
+ inited (integer, optional),
+ lastLoginTime (string, optional),
+ lowpressure (integer, optional),
+ mobile (string, optional),
+ modifyTime (string, optional),
+ name (string, optional),
+ operation (string, optional),
+ picture (Picture, optional),
+ province (string, optional),
+ role (integer, optional),
+ sex (integer, optional),
+ sickage (integer, optional),
+ source (string, optional),
+ status (string, optional),
+ unionId (string, optional),
+ version (string, optional),
+ wechatOpenid (string, optional),
+ weight (integer, optional): 体重
+ }
+ Picture {
+ height (integer, optional),
+ id (integer, optional),
+ md5 (string, optional),
+ name (string, optional),
+ path (string, optional),
+ size (integer, optional),
+ suffix (string, optional),
+ uploadTime (string, optional),
+ userId (integer, optional),
+ width (integer, optional)
+ }
+ */
+
+//查询首页数据
+
+-(void)requestUpdateHomeData{
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+
+    NSString *url = @"/home/index";
+    //请求
+    QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+    [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+        NSUInteger error = request.responseStatusCode;
+        DLog(@"%@",request.responseJSONObject);
+        if (error == 0) {
+            //处理数据
+            HomeIndexModel *model =  [HomeIndexModel modelObjectWithDictionary:request.responseJSONObject];
+            DLog(@"接口数据:%@",model);
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+            DLog(@"接口(%@)fail data",url);
+        }
+    } failure:^(QSBaseRequest *request) {
+        [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+        DLog(@"接口(%@) fail network",url);
+    }];
+
+}
+
+/*
+ 接口:
+ /bsrecord/add 记录血糖数据信息
+ 
+ 参数:
+ bsValue (number, optional): 血糖数据 ,
+ lat (string, optional): 纬度 ,
+ lng (string, optional): 经度 ,
+ recordTime (string, optional): 记录时间 ,
+ timeType (string, optional): 记录时间类型 1 凌晨前 2 早餐前 3 早餐后 4 午餐前 5 午餐后 6 睡前 7 晚餐前 8 晚餐后
+ 
+ 返回值：
+ errCode:
+ errMsg (string, optional): 错误信息
+ data (UserInfoGetResponse, optional),
+ */
+- (void)requestBSRecordAdd {
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    [dic sf_setObject:[NSNumber numberWithFloat:5.0] forKey:@"bsValue"];
+    [dic sf_setObject:@"0" forKey:@"lat"];
+    [dic sf_setObject:@"0" forKey:@"lng"];
+    [dic sf_setObject:[NSString stringWithFormat:@"%0.0f",[ToolBox getCurrentTimeInterval]] forKey:@"recordTime"];
+    [dic sf_setObject:@"2" forKey:@"timeType"];
+    NSString *url = @"/bsrecord/add";
+    //请求
+    QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+    [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+        NSUInteger error = request.responseStatusCode;
+        DLog(@"%@",request.responseJSONObject);
+        if (error == 0) {
+            //处理数据
+            
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+            DLog(@"接口(%@)fail data",url);
+        }
+    } failure:^(QSBaseRequest *request) {
+        [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+        DLog(@"接口(%@) fail network",url);
+    }];
+    
+}
+
+/*
+ 接口:
+/bsrecord/listofdate 查询某一天的血糖记录数据信息
+ 
+ 参数:
+ dateTime (string, optional): 日期 ,
+ pageNum (integer, optional): 页码 ,
+ pageSize (integer, optional): 分页数量
+ timeType (string, optional): 时间类型 1 凌晨前 2 早餐前 3 早餐后 4 午餐前 5 午餐后 6 睡前 7 晚餐前 8 晚餐后 为空时查询所有
+ 
+ 返回值：
+ errCode:
+ errMsg (string, optional): 错误信息
+ data (QueryBSRecordListResponse, optional),
+ 
+ QueryBSRecordListResponse {
+ lists (Array[BloodsugarRecord], optional): 数据信息
+ }
+ BloodsugarRecord {
+ bsResult (string, optional): 血糖结果 1 低血糖 2 血糖偏低 3 正常血糖 4 血糖偏高 ,
+ bsResultRemark (string, optional): 血糖值说明 ,
+ bsValue (number, optional): 血糖值 ,
+ createTime (string, optional): 创建时间 ,
+ id (integer, optional): 编码 ,
+ lat (string, optional): 纬度 ,
+ lng (string, optional): 经度 ,
+ recordTime (string, optional): 记录时间 ,
+ state (integer, optional): 返回1有效的 ,
+ timeType (string, optional): 时间类型 1 凌晨前 2 早餐前 3 早餐后 4 午餐前 5 午餐后 6 睡前 7 晚餐前 8 晚餐后 ,
+ userId (integer, optional): 用户id
+ }
+ */
+//查询某一天、某一阶段的血糖记录数据信息
+- (void)requestBSRecordListOfDateTime {
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    [dic sf_setObject:[NSNumber numberWithFloat:5.0] forKey:@"dateTime"];
+    [dic sf_setObject:@"0" forKey:@"pageNum"];
+    [dic sf_setObject:@"0" forKey:@"pageSize"];
+    [dic sf_setObject:@"0" forKey:@"recordTime"];
+    [dic sf_setObject:@"2" forKey:@"timeType"];
+    NSString *url = @"/bsrecord/listofdate";
+    //请求
+    QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+    [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+        NSUInteger error = request.responseStatusCode;
+        DLog(@"%@",request.responseJSONObject);
+        if (error == 0) {
+            //处理数据
+            
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+            DLog(@"接口(%@)fail data",url);
+        }
+    } failure:^(QSBaseRequest *request) {
+        [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+        DLog(@"接口(%@) fail network",url);
+    }];
+    
+}
+
+/*
+ 接口:
+ /bsrecord/queryview 查询血糖历史记录数据信息
+ 
+ 参数:
+ pageNum (integer, optional): 页码 ,
+ pageSize (integer, optional): 分页数量
+ 
+ 返回值：
+ errCode:
+ errMsg (string, optional): 错误信息
+ data (QueryBSRcordResponse, optional),
+ 
+ QueryBSRcordResponse {
+ bsDates (Array[BSDateRecordTVO], optional): 记录数据信息 ,
+ heightCount (integer, optional): 偏高记录数 ,
+ lowCount (integer, optional): 偏低记录数 ,
+ normalCount (integer, optional): 正常记录数 ,
+ userBSStatistics (UserBSStatistics, optional): 用户所有的记录分析结果
+ }
+ BSDateRecordTVO {
+ dateTime (string, optional): 日期 ,
+ records (Array[BSRecoreTVO], optional): 记录数据
+ }
+ UserBSStatistics {
+ endTime (string, optional): 统计的结果时间 为空时 统计所有的 ,
+ heightCount (integer, optional): 偏高记录数 ,
+ lowCount (integer, optional): 偏低记录数 ,
+ normalCount (integer, optional): 正常记录数 ,
+ startTime (string, optional): 统计的开始时间 为空时 统计所有的
+ }
+ BSRecoreTVO {
+ bsResult (string, optional): 血糖结果 1 低血糖 2 血糖偏低 3 正常血糖 4 血糖偏高 ,
+ bsResultRemark (string, optional): 结果描述 ,
+ bsValue (number, optional): 血糖数据 ,
+ createTime (string, optional),
+ id (integer, optional): id ,
+ lat (string, optional): 纬度 ,
+ lng (string, optional): 经度 ,
+ recordTime (string, optional): 记录时间 ,
+ state (integer, optional),
+ sumRecords (integer, optional),
+ timeType (string, optional): 时间类型 1 凌晨前 2 早餐前 3 早餐后 4 午餐前 5 午餐后 6 睡前 7 晚餐前 8 晚餐后 ,
+ userId (integer, optional): 用户编码
+ }
+ */
+//查询血糖历史记录数据信息
+- (void)requestBSRecordQueryView {
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    [dic sf_setObject:[NSNumber numberWithInt:0] forKey:@"pageNum"];
+    [dic sf_setObject:[NSNumber numberWithInt:50] forKey:@"pageSize"];
+    NSString *url = @"/bsrecord/queryview";
+    //请求
+    QSBaseRequest *api = [[QSBaseRequest alloc] initWithRequestURL:url parameter:dic];
+    [api startWithCompletionBlockWithSuccess:^(QSBaseRequest *request) {
+        NSUInteger error = request.responseStatusCode;
+        DLog(@"%@",request.responseJSONObject);
+        if (error == 0) {
+            //处理数据
+            
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:request.responseStatusString];
+            DLog(@"接口(%@)fail data",url);
+        }
+    } failure:^(QSBaseRequest *request) {
+        [SVProgressHUD showInfoWithStatus:SERVER_ERROR_TIP];
+        DLog(@"接口(%@) fail network",url);
+    }];
+    
+}
+
+/*
+ 接口:
+ /user/info/update 修改个人资料
+ 
+ 参数:
+ bsSikeage (integer, optional): 患病年限 ,
+ bsType (integer, optional): 血糖级别 ,
+ 
+ 返回值：
+ errCode:
+ errMsg (string, optional): 错误信息
+ data (UserInfoGetResponse, optional),
+ */
+
+@end
